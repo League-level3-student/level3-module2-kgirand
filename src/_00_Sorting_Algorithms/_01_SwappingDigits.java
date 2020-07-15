@@ -25,7 +25,7 @@ class _01_SwappingDigits {
 	//1. Complete the method so that the first two elements of the array are swapped
 	public static void swapArrayOfTwo(int[] arr) {
 		int i = arr[1];
-		arr[1]=arr[2];
+		arr[1] = arr[2];
 		arr[2] = i;
 	}
 	
