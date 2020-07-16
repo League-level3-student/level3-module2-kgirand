@@ -6,8 +6,10 @@ public class StringTrimmer {
 	
 	static public String trimString(String str, int removesLeft) {
 		//1. If there are no removes left
+		if(removesLeft == 0) {
 			//2.  return the string
-		
+			return str;
+		}
 		//3. Else you need to substring the string by 1, reduce removesLeft by 1, and then return both. 
 		
 		return null;
