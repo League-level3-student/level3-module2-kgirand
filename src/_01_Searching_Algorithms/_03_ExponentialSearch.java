@@ -40,8 +40,8 @@ public class _03_ExponentialSearch {
 		//		half of the counter
 		//		minimum
 		//		the value to be found
-		int i = binarySearch(ints[0], counter/2, minimum, value);
+		int i = binarySearch(ints, counter/2, minimum, value);
 		//10. return the result
-		return 0;
+		return i;
 	}
 }
