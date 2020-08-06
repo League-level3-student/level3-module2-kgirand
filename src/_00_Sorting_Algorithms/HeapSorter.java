@@ -19,7 +19,7 @@ public class HeapSorter extends Sorter {
 		//9. make a for loop that starts half way between
 		//   0 and n and counts down until it is less than 0.
 		//   Inside this for loop, call the heapSort method with n and i
-        for(int i = array.length; i>array.length/2; i--) {
+        for(int i = array.length; i>array[array.length/2]; i--) {
         	heapSort(array, n,i, display);
         }
         //10. make a for loop that starts at n-1 
@@ -60,8 +60,9 @@ public class HeapSorter extends Sorter {
         	int rando = array[i];
         	array[i] = array[largest];
         	array[largest] = rando;
+        	heapSort(array, n, largest, display);
         }
-        heapSort(array, n, largest, display);
+        
 	}
 
 }

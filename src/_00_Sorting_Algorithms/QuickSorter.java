@@ -41,8 +41,8 @@ public class QuickSorter extends Sorter {
             //   and decrease j by 1.
             if(i<=j) {
             	int rando = array[i];
-            	array[i] = array[2];
-            	array[2] = rando;
+            	array[i] = array[j];
+            	array[j] = rando;
             	i+=1;
             	j-=1;
             }
@@ -57,6 +57,7 @@ public class QuickSorter extends Sorter {
         if(i<high) {
         	quickSort(array, i, high, display);
         }
+        display.updateDisplay();
 	}
 
 }
