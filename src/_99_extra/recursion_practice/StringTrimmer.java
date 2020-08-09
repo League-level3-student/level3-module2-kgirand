@@ -9,10 +9,14 @@ public class StringTrimmer {
 		if(removesLeft == 0) {
 			//2.  return the string
 			return str;
-		}
+		}else {
 		//3. Else you need to substring the string by 1, reduce removesLeft by 1, and then return both. 
-		
-		return null;
+		str.substring(1);
+		removesLeft -= 1;
+		String rL = Integer.toString(removesLeft);
+		return str;
+		return rL;
+		}
 	}
 	
 	public static void main(String[] args) {

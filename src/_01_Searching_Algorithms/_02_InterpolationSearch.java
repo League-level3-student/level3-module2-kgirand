@@ -50,7 +50,8 @@ public class _02_InterpolationSearch {
             	end = position-1; 	
             }
         //9. Return -1 because the value was not found
-        return -1;
+         
 		}
+		return -1;
 	}
 }

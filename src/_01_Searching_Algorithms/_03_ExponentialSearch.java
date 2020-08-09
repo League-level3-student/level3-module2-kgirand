@@ -8,7 +8,7 @@ public class _03_ExponentialSearch {
 	
 	//1. Complete the steps in the exponentialSearch method.
 	//   We can assume that array is sorted.
-	public static int exponentialSearch(int array[], int value)
+	public static int exponentialSearch(int array[], int value) 
 	{
 		// 2. Check if the array element at 0 is the value.
 		//    If it is, then return 0.
@@ -36,12 +36,12 @@ public class _03_ExponentialSearch {
 		}
 		//9. use the binary search method you wrote using the following parameters:
 		//		the array to be searched
-				int[] ints = new int[0];
 		//		half of the counter
 		//		minimum
 		//		the value to be found
-		int i = binarySearch(ints, counter/2, minimum, value);
 		//10. return the result
-		return i;
+		_01_BinarySearch bsearch = new _01_BinarySearch();
+		return bsearch.binarySearch(array, counter/2, minimum, value);
+
 	}
 }
