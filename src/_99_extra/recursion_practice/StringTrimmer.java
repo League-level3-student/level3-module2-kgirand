@@ -14,9 +14,9 @@ public class StringTrimmer {
 		str.substring(1);
 		removesLeft -= 1;
 		String rL = Integer.toString(removesLeft);
-		return str;
-		return rL;
-		}
+		return trimString(str, removesLeft);
+		
+		}		
 	}
 	
 	public static void main(String[] args) {
@@ -24,5 +24,6 @@ public class StringTrimmer {
 		assertEquals("League", trimString("LeagueOfAmazing!", 10));
 		assertEquals("James", trimString("JamesTheIntern", 9));
 		assertEquals("", trimString("TheWholeWord", 12));
+		
 	}
 }

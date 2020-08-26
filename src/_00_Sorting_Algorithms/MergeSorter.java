@@ -13,6 +13,8 @@ public class MergeSorter extends Sorter {
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
 		//20. call the mergeSort method with 0 and the length of the array minus one
+		mergeSort(array, 0, array.length-1, display);
+		display.updateDisplay();
 	}
 	
 	private void mergeSort(int[] array, int low, int high, SortingVisualizer display) {
@@ -25,7 +27,7 @@ public class MergeSorter extends Sorter {
 			//   equal to the half way point between low and high
             int middle = (low+high)/2;
             //4. call the mergeSort method with low and middle
-           mergeSort(array, low, high, display);
+           mergeSort(array, low, middle, display);
             //5. call the mergeSort method with middle + 1 and high
             mergeSort(array, middle+1, high, display);
             //6. copy the elements from the array into the temporary array,
@@ -65,7 +67,9 @@ public class MergeSorter extends Sorter {
                 array[k] = integers[i];
                 //19. increase k and i by 1
                 k+=1;
+                i+=1;
             } 
+            display.updateDisplay();
 		}  
 	}
 

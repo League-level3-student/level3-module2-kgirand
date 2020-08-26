@@ -22,12 +22,14 @@ public class SelectionSorter extends Sorter {
 				if(array[j]<array[index]) {
 					index = j;
 				}
-			}		
+			}	
+			display.updateDisplay();
 			//5. swap the array element at index with the array element at i
 			int rando = array[index];
 			array[index] = array[i];
 			array[i] = rando; 
-			
+			display.updateDisplay();
 		}
+		display.updateDisplay();
 	}
 }
