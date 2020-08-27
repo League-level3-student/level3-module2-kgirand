@@ -13,7 +13,7 @@ public class QuickSorter extends Sorter {
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
 		//10. call the quickSort method with 0 and the length of the array minus one
-		quickSort(array, 0, (array.length-1), display);
+		quickSort(array, 0, array.length-1, display);
 	}
 	
 	private void quickSort(int[] array, int low, int high, SortingVisualizer display) {
@@ -33,7 +33,7 @@ public class QuickSorter extends Sorter {
             }
             //6. make a while loop that decrements j while 
         	//   the array element at j is greater than pivot
-            while(array[j]<pivot) {
+            while(array[j]>pivot) {
             	j--;
             }
             //7. if i is less than or equal to j, 
