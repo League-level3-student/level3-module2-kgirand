@@ -19,8 +19,8 @@ public class QuickSorter extends Sorter {
 	private void quickSort(int[] array, int low, int high, SortingVisualizer display) {
 		//2. create two integer variables called i and j and set them equal
 		//   to low and high respectively.
-        int i = array[low]; 
-        int j = array[high];
+        int i = low; 
+        int j = high;
         //3. create an integer called pivot and set it equal to the element
         //   in the array that is the halfway point between low and high
         int pivot = array[(low+high)/2];
@@ -41,6 +41,7 @@ public class QuickSorter extends Sorter {
             //   In the same if-statement, increase i by 1 
             //   and decrease j by 1.
             if(i<=j) {
+            	
             	int rando = array[i];
             	array[i] = array[j];
             	array[j] = rando;
