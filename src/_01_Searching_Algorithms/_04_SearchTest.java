@@ -11,7 +11,7 @@ class _04_SearchTest   {
 	@Test
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
-		String[] words = new String[10];
+		String[] words = {"word","hello","what","wow","person","hi"};
 		String value = "hi";
 		assertEquals(5,_00_LinearSearch.linearSearch(words, value));
 		
@@ -21,9 +21,9 @@ class _04_SearchTest   {
 	public void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
-		int[] ints = new int[10];
+		int[] ints = {0,1,2,3,4,5};
 		int start = 0; 
-		int end = ints.length; 
+		int end = 5; 
 		int value = 5; 
 		assertEquals(5,_01_BinarySearch.binarySearch(ints, start, end, value));
 	}
@@ -32,7 +32,7 @@ class _04_SearchTest   {
 	public void testInterpolationSearch() {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
-		int[] intss = new int[10];
+		int[] intss = {0,1,2,3,4,5,6,8,9};
 		int value = 5;
 		assertEquals(5,_02_InterpolationSearch.interpolationSearch(intss, value));
 	}
@@ -41,7 +41,7 @@ class _04_SearchTest   {
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
-		int[] integers = new int[10];
+		int[] integers = {0,1,2,3,4,5};
 		int value = 5; 
 		assertEquals(5,_03_ExponentialSearch.exponentialSearch(integers, value));
 	}

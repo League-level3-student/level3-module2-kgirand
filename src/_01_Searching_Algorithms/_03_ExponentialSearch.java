@@ -40,8 +40,7 @@ public class _03_ExponentialSearch {
 		//		minimum
 		//		the value to be found
 		//10. return the result
-		_01_BinarySearch bsearch = new _01_BinarySearch();
-		return bsearch.binarySearch(array, counter/2, minimum, value);
+		return _01_BinarySearch.binarySearch(array, counter/2, minimum, value);
 
 	}
 }
