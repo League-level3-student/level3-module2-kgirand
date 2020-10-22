@@ -17,19 +17,33 @@ public class _00_MoreAndMoreTests {
 	    assertEquals("10 x 10 = 100", multiply(10, 10));
 	    assertEquals("8 x 11 = 88", multiply(8, 11));
 	  }
-//
-//	@Test
-//	  public void PrimeTest() {
-//
-//	    assertTrue(isPrime(3));
-//	    assertTrue(isPrime(5));
-//	    assertTrue(isPrime(541));
-//	    assertFalse(isPrime(4));
-//	    assertFalse(isPrime(12));
-//	    assertFalse(isPrime(527));
-//
-//	  }
-//
+	
+	private Object multiply(int i, int j) {
+		// TODO Auto-generated method stub
+		int k = i*j;
+		return i + " x " + j + " = " + k;
+	}
+	
+	@Test
+	  public void PrimeTest() {
+
+	    assertTrue(isPrime(3));
+	    assertTrue(isPrime(5));
+	    assertTrue(isPrime(541));
+	    assertFalse(isPrime(4));
+	    assertFalse(isPrime(12));
+	    assertFalse(isPrime(527));
+
+	  }
+
+private boolean isPrime(int i) {
+		// TODO Auto-generated method stub
+	if(i/2.0 % 0.0) {
+		return false;
+	}
+	return false;
+	}
+
 //	@Test
 //	  public void SquareTest() {
 //
@@ -57,11 +71,7 @@ public class _00_MoreAndMoreTests {
 //
 //	  }
 
-	private Object multiply(int i, int j) {
-		// TODO Auto-generated method stub
-		int k = i*j;
-		return i + " x " + j + " = " + k;
-	}
+	
 
 
 
