@@ -38,38 +38,64 @@ public class _00_MoreAndMoreTests {
 
 private boolean isPrime(int i) {
 		// TODO Auto-generated method stub
-	if(i/2.0 % 0.0) {
+	if(i<=1) {
 		return false;
 	}
-	return false;
+	for(int j = 2; j < i; j++) {
+		if(i%j==0) {
+			return false;
+		}
+	}
+	return true;
 	}
 
-//	@Test
-//	  public void SquareTest() {
-//
-//	    assertTrue(isSquare(4));
-//	    assertTrue(isSquare(144));
-//	    assertTrue(isSquare(64));
-//	    assertTrue(isSquare(10201));
-//	    assertTrue(isSquare(1));
-//	    assertFalse(isSquare(3));
-//	    assertFalse(isSquare(22));
-//	    assertFalse(isSquare(143));
-//
-//	  }
-//
-//	@Test
-//	  public void CubeTest() {
-//
-//	    assertTrue(isCube(27));
-//	    assertTrue(isCube(216));
-//	    assertTrue(isCube(729));
-//	    assertTrue(isCube(1));
-//	    assertFalse(isCube(3));
-//	    assertFalse(isCube(22));
-//	    assertFalse(isCube(143));
-//
-//	  }
+	@Test
+	public void SquareTest() {
+
+	    assertTrue(isSquare(4));
+	    assertTrue(isSquare(144));
+	    assertTrue(isSquare(64));
+	    assertTrue(isSquare(10201));
+	    assertTrue(isSquare(1));
+	    assertFalse(isSquare(3));
+	    assertFalse(isSquare(22));
+	    assertFalse(isSquare(143));
+
+	  }
+
+	private boolean isSquare(int i) {
+		// TODO Auto-generated method stub
+		for(int j = 0; j < i/ 2 + 2; j++) {
+			if(j*j == i) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	@Test
+	  public void CubeTest() {
+
+		assertTrue(isCube(27));
+	    assertTrue(isCube(216));
+	    assertTrue(isCube(729));
+	    assertTrue(isCube(1));
+	    assertFalse(isCube(3));
+	    assertFalse(isCube(22));
+	    assertFalse(isCube(143));
+
+	  }
+
+	private boolean isCube(int i) {
+		// TODO Auto-generated method stub
+		double cubeRoot = Math.cbrt(i);
+		int val = (int) (cubeRoot);
+		System.out.println(i);
+		if(((cubeRoot*10))-(val*10)==0) {
+			return true;
+		}
+		return false;
+	}
 
 	
 

@@ -2,6 +2,7 @@ package _02_More_Algorithms;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,6 +20,14 @@ public class _01_SearchingAndSortingAlgorithms {
 		List<String> eggs = Arrays.asList(new String[] { "whole", "whole", "whole", "whole", "cracked", "whole", "whole", "whole",
 				"cracked", "whole", "whole", "whole" });
 		assertEquals(4, Algorithms.findBrokenEgg(eggs));
+	}
+	public int findBrokenEgg(ArrayList eggs) {
+		for(int i = 0; i < eggs.size()-1; i++) {
+			if(eggs.get(i)==("cracked")) {
+				return i;
+			}
+		}
+		return 0;
 	}
 
 	/* 2. Count how many oysters contain pearls. */
