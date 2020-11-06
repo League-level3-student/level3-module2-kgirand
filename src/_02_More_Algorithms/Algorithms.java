@@ -43,9 +43,13 @@ public class Algorithms {
 		return word;
 	}
 
-	public static Object containsSOS(List<String> message2) {
+	public static Object containsSOS(List<String> message1) {
 		// TODO Auto-generated method stub
-		if()
-		return null;
+		for(int i = 0; i < message1.size(); i++) {
+			if(message1.get(i).equals("... --- ...")) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

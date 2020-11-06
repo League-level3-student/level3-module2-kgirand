@@ -23,9 +23,8 @@ public class RecursionMath {
 		if(numberToDevideBy > number) {
 			return number;
 		}else {
-			
+			return recursiveDivision(number, numberToDevideBy);
 		}
-		return numberToDevideBy;
 		
 	}
 	
